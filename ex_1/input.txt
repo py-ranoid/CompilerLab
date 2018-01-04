@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+main()
+{
+long a = 10, b=20;
+char sirappu = 'a';
+float xD = 44;
+printf("xyx");
+long x = 10, y = 20;
+if(a > b)
+cout<<“a is greater”;
+else
+func(x,y)
+}
