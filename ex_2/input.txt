@@ -1,0 +1,13 @@
+id1>=id2
+id1<id2
+id1<=id2
+id1<>id2
+id1==id2
+id1==13.45E-45
+id1<='C'
+id1<>"C++"
+/* 
+This is a multi line comment
+*/
+// Single Line Comment
+
