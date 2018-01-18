@@ -1,0 +1,20 @@
+; {declaration} {printf("\nDeclaration encountered : %s " , yytext);}
+; {delim} { }
+; {if_expr} {printf("\nIf encountered : %s", yytext );}
+; then {printf("\nThen encountered");}
+; else_expr {printf("Else encountered : %s" , yytext);}
+; {number}+ {yylval = install_num(); return NUMBER;}
+; "<" {yylval = LT; return RELOP;}
+; "<=" {yylval = LE; return RELOP;}
+; "=" {yylval = EQ;return RELOP;}
+; "<>" {yylval = NE; return RELOP;}
+; ">" {yylval = GT; return RELOP;}
+; ">=" {yylval = GE; return RELOP;}
+
+; open_para [(]
+; close_para [)]
+; declaration {datatypes}{ws}({ws}*{id}{ws}*(={ws}*({digit}*|{id}))?{ws}*{dec_delim}?)+{final_line_delim}*
+; b_expression ({id}|{digit}*){ws}*(({ROP}){ws}*({id}|{digit}*))?
+; if_expr (if){ws}*{open_para}{b_expression}{close_para}
+; el_if_expr (else){ws}*(if){ws}*{open_para}{b_expression}{close_para}
+; else_expr (else)
