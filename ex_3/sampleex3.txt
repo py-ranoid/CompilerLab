@@ -6,9 +6,9 @@ long a = 10, b=20;
 char var1 = 'a';
 float xD = 44;
 printf("xyx");
-long x = 10, y = 20;
+long x1 = 10, y = 20;
 if(a > b)
-cout<<“a is greater”;
+printf("a is greater");
 else
-func(x,y)
+func(x,y);
 }
