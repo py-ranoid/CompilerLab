@@ -1,0 +1,25 @@
+int main() 
+{
+	int temp; 
+	temp=add(a,b);
+}
+
+add(x,y)
+{
+	return sub(x,y);
+}
+
+sub(x,y) 
+{
+	return mul(x,y); 
+}
+
+mul(x,y)
+{
+	return div(x,y);
+}
+
+div(x,y) 
+{
+	return sqrt(x); 
+}
